@@ -1,5 +1,7 @@
 package Actividades;
 import java.util.Iterator;
+
+
 import java.util.ArrayList;
 
 public class Bolsa <T> implements Iterable <T>{
@@ -11,5 +13,15 @@ public class Bolsa <T> implements Iterable <T>{
         this.tope=tope;
     }
 
-    
+    public void add(T objeto){
+        if (lista.size()<tope){
+            lista.add(objeto);
+        } else { 
+            throw new RuntimeException("No cabe más");
+        }
+    }
+
+    public Iterator <T> iterator(){
+        return lista.iterator();
+    }
 }
