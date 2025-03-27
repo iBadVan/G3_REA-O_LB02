@@ -28,6 +28,9 @@ public class TestGenChocolatina {
         System.out.println("Cajoneria Inicial: ");
         System.out.println(cajoneria);
 
+        System.out.println("Búsqueda:");
+        System.out.println(cajoneria.search(new Chocolatina("Ferrero")));
+        System.out.println(cajoneria.search(new Chocolatina("Princesa")));
 
 
     }
