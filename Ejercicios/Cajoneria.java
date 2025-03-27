@@ -34,9 +34,14 @@ public class Cajoneria implements Iterable<Caja<?>>{
 
     public Object delete(Object elemento) {
         for (Caja<?> caja : lista) {
-            
+            if (elemento != null && elemento.equals(caja.obtenerContenido())) {
+                Object eliminado = caja.obtenerContenido();
+                caja.guardar(null); 
+                return eliminado;
+            }
         }
     }
+
 
     
     @Override
