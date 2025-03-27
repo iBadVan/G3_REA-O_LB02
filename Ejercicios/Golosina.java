@@ -1,4 +1,4 @@
-package Actividades;
+package Ejercicios;
 
 public class Golosina {
     private String nombre;
