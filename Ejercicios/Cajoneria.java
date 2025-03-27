@@ -40,7 +40,10 @@ public class Cajoneria implements Iterable<Caja<?>>{
                 return eliminado;
             }
         }
+        return null;
     }
+
+    
 
 
     
