@@ -24,8 +24,9 @@ public class Principal {
             System.out.println(golosinita.getNombre());
             System.out.println(golosinita.getPeso());
         } 
+        
 
-
+        
 
 
     }
