@@ -25,6 +25,9 @@ public class TestGen  {
         cajoneria.add(caja4);
         cajoneria.add(caja5);
 
+        System.out.println("--- Cajoneria Inicial ---");
+        System.out.println(cajoneria);
+
         
 
     }
