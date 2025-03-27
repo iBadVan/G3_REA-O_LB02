@@ -24,4 +24,5 @@ public class Bolsa <T> implements Iterable <T>{
     public Iterator <T> iterator(){
         return lista.iterator();
     }
+    
 }

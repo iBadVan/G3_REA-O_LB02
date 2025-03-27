@@ -24,7 +24,14 @@ public class Principal {
             System.out.println(golosinita.getNombre());
             System.out.println(golosinita.getPeso());
         } 
-        
+
+        Golosina[] golosinas = {
+            new Golosina("chupetin", 2.0),
+            new Golosina("caramelo", 4.0)
+        };
+        Golosina buscar = new Golosina("chupetin", 2.0);
+
+        System.out.println(exist(golosinas, buscar));
 
         
 
