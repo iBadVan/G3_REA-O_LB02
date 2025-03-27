@@ -16,8 +16,8 @@ public class Cajoneria implements Iterable<Caja<?>>{
     public void add(Caja<?> caja) {
         if (lista.size() < tope) {
             lista.add(caja);
-        } else {
-            System.out.println("La cajonería está llena.");
+        } else { 
+            throw new RuntimeException("No cabe más");
         }
     }
     
