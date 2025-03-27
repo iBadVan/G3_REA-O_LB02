@@ -31,7 +31,7 @@ public class Principal {
         };
         Golosina buscar = new Golosina("chupetin", 2.0);
 
-        System.out.println(exist(golosinas, buscar));
+        System.out.println(DemoMetodoGenerico.exist(golosinas, buscar));
 
         
 
