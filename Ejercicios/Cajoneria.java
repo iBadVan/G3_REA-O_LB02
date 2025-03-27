@@ -31,6 +31,13 @@ public class Cajoneria implements Iterable<Caja<?>>{
         }
         return "Elemento no encontrado";
     }
+
+    public Object delete(Object elemento) {
+        for (Caja<?> caja : lista) {
+            
+        }
+    }
+
     
     @Override
     public Iterator<Caja<?>> iterator() {
