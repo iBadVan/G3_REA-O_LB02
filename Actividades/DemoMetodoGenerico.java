@@ -12,5 +12,7 @@ public class DemoMetodoGenerico {
         }
         return true; 
     }     
-    
+    public static void main(String[] args) {
+        
+    }
 }
