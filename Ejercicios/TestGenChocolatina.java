@@ -32,6 +32,11 @@ public class TestGenChocolatina {
         System.out.println(cajoneria.search(new Chocolatina("Ferrero")));
         System.out.println(cajoneria.search(new Chocolatina("Princesa")));
 
+        System.out.println("Eliminación:");
+        System.out.println("Elemento eliminado: " + cajoneria.delete(new Chocolatina("Milka")));
+        System.out.println("Elemento eliminado: " + cajoneria.delete(new Chocolatina("Princesa")));
 
+        System.out.println("--- Cajoneria Final ---");
+        System.out.println(cajoneria);
     }
 }
