@@ -14,7 +14,14 @@ public class DemoMetodoGenerico {
     }     
 
     static <T> boolean exist (T[] arreglo, T valor){
-        
+        for (T valorrecorrido : arreglo){
+            if(valorrecorrido.equals(valor)){
+                return true;
+            } else {
+                return false;
+            }
+
+        }
     }
 
 
