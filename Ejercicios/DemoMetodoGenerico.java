@@ -13,18 +13,14 @@ public class DemoMetodoGenerico {
         return true; 
     }     
 
-    static <T> boolean exist (T[] arreglo, T valor){
+    static <T> boolean exist(T[] arreglo, T valor) {
         for (T valorrecorrido : arreglo){
             if(valorrecorrido.equals(valor)){
                 return true;
-            } else {
-                return false;
             }
-
         }
+        return false;
     }
-
-
 
     public static void main(String[] args) {
         Integer nums[]={1,2,3,4,5};
@@ -43,7 +39,17 @@ public class DemoMetodoGenerico {
         Double dvals1[] = {1.1, 2.2, 3.3, 4.4, 5.5};
         Double dvals2[] = {1.1, 2.2, 3.3, 4.4, 5.5};
     
-        if (igualArrays(dvals1, dvals2))
+        if (igualArrays(dvals1, dvals2)){
             System.out.println("dvals1 es igual a dvals2");
+        }
+        
+        String [] nombres = {"Ivan", "Oscar", "Piero"};
+        Integer [] numeros = {1,2,3,4,5,6,7};
+        System.out.println(exist(nombres,"Ivan"));
+        System.out.println(exist(numeros,17));
+        //System.out.println(exist(numeros,"Ivan"));
+
+
+
     }
 }
