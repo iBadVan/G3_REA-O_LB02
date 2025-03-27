@@ -43,11 +43,15 @@ public class DemoMetodoGenerico {
             System.out.println("dvals1 es igual a dvals2");
         }
         
+
+        //TEST EXIST GENÉRICO
         String [] nombres = {"Ivan", "Oscar", "Piero"};
         Integer [] numeros = {1,2,3,4,5,6,7};
         System.out.println(exist(nombres,"Ivan"));
         System.out.println(exist(numeros,17));
         //System.out.println(exist(numeros,"Ivan"));
+
+
 
 
 
