@@ -9,6 +9,7 @@ public class Cajoneria implements Iterable<Caja<?>>{
     private int tope;
 
     public Cajoneria(int tope) {
+        super();
         this.tope = tope;
         lista = new ArrayList<>();
     }
