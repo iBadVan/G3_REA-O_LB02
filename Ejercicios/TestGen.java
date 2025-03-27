@@ -36,6 +36,7 @@ public class TestGen  {
         System.out.println("Elemento eliminado: " + cajoneria.delete(new Golosina("Chupetin", 2.0))); 
         System.out.println("Elemento eliminado: " + cajoneria.delete(new Golosina("Galleta", 2.0)));  
 
-
+        System.out.println("--- Cajoneria Final ---");
+        System.out.println(cajoneria);
     }
 }
