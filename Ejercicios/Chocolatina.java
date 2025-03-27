@@ -17,9 +17,14 @@ public class Chocolatina {
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Chocolatina that = (Chocolatina) obj;
-        return marca.equals(that.marca);
+        if (!(obj instanceof Chocolatina)) return false;
+        Chocolatina c = (Chocolatina) obj;
+        return this.nombre.equals(c.nombre) && this.peso == c.peso;
+    }
+
+    @Override
+    public String toString() {
+        return "Chocolatina[nombre=" + nombre + ", peso=" + peso + "]";
     }
 }
 
