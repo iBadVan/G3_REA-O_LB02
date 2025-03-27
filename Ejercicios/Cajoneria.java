@@ -43,9 +43,19 @@ public class Cajoneria implements Iterable<Caja<?>>{
         return null;
     }
 
-    
-
-
+    @Override
+    public String toString() {
+        StringBuilder texto = new StringBuilder();
+        texto.append("Posicion  Color  Caja  Objeto");
+        for (int i = 0; i < lista.size(); i++) {
+            Caja<?> caja = lista.get(i);
+            texto.append(i + 1 + "  ")
+              .append(caja.getColor() + "  ")
+              .append(caja.obtenerContenido() != null ? caja.obtenerContenido().toString() : "Vacía")
+              .append("\n");
+        }
+        return texto.toString();
+    }
     
     @Override
     public Iterator<Caja<?>> iterator() {
