@@ -21,6 +21,16 @@ public class Cajoneria implements Iterable<Caja<?>>{
             throw new RuntimeException("No cabe más");
         }
     }
+
+    public String search(Object elemento) {
+        for (int i = 0; i < lista.size(); i++) {
+            Caja<?> caja = lista.get(i);
+            if (elemento != null && elemento.equals(caja.obtenerContenido())) {
+                return "Posición: " + (i + 1) + ", Color: " + caja.getColor();
+            }
+        }
+        return "Elemento no encontrado";
+    }
     
     @Override
     public Iterator<Caja<?>> iterator() {
