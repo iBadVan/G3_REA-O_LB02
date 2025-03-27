@@ -19,6 +19,13 @@ public class TestGen  {
         Caja<Golosina> caja5 = new Caja<>("rosado");
         caja5.guardar(new Golosina("Chocolate", 3.0));
 
+        cajoneria.add(caja1);
+        cajoneria.add(caja2);
+        cajoneria.add(caja3);
+        cajoneria.add(caja4);
+        cajoneria.add(caja5);
+
+        
 
     }
 }
