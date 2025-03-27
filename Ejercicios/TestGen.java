@@ -25,10 +25,17 @@ public class TestGen  {
         cajoneria.add(caja4);
         cajoneria.add(caja5);
 
-        System.out.println("--- Cajoneria Inicial ---");
+        System.out.println("Cajoneria Inicial: ");
         System.out.println(cajoneria);
 
-        
+        System.out.println("Búsqueda: ");
+        System.out.println(cajoneria.search(new Golosina("Caramelo", 4.0)));
+        System.out.println(cajoneria.search(new Golosina("Galleta", 2.0))); 
+
+        System.out.println("Eliminación: ");
+        System.out.println("Elemento eliminado: " + cajoneria.delete(new Golosina("Chupetin", 2.0))); 
+        System.out.println("Elemento eliminado: " + cajoneria.delete(new Golosina("Galleta", 2.0)));  
+
 
     }
 }
