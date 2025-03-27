@@ -24,9 +24,13 @@ public class Golosina {
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Golosina golosina = (Golosina) obj;
-        return Double.compare(golosina.peso, peso) == 0 &&
-               nombre.equals(golosina.nombre);
+        if (!(obj instanceof Golosina)) return false;
+        Golosina g = (Golosina) obj;
+        return this.nombre.equals(g.nombre) && this.peso == g.peso;
+    }
+
+    @Override
+    public String toString() {
+        return "Golosina[nombre=" + nombre + ", peso=" + peso + "]";
     }
 }
