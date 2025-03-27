@@ -12,6 +12,13 @@ public class DemoMetodoGenerico {
         }
         return true; 
     }     
+
+    static <T> boolean exist (T[] arreglo, T valor){
+        
+    }
+
+
+
     public static void main(String[] args) {
         Integer nums[]={1,2,3,4,5};
         Integer nums2[]={1,2,3,4,5};
