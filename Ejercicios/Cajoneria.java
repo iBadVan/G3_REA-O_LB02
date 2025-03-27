@@ -1,6 +1,7 @@
 package Ejercicios;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Cajoneria implements Iterable<Caja<?>>{
 
@@ -18,5 +19,10 @@ public class Cajoneria implements Iterable<Caja<?>>{
         } else {
             System.out.println("La cajonería está llena.");
         }
+    }
+    
+    @Override
+    public Iterator<Caja<?>> iterator() {
+        return lista.iterator();
     }
 }
