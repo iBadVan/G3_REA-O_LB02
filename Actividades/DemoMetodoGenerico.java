@@ -25,5 +25,11 @@ public class DemoMetodoGenerico {
             System.out.println("nums es igual a num3");
         if (igualArrays(nums,nums4))
             System.out.println("nums es igual a nums4");
+
+        Double dvals1[] = {1.1, 2.2, 3.3, 4.4, 5.5};
+        Double dvals2[] = {1.1, 2.2, 3.3, 4.4, 5.5};
+    
+        if (igualArrays(dvals1, dvals2))
+            System.out.println("dvals1 es igual a dvals2");
     }
 }
